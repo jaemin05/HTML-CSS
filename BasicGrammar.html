@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BasicGrammar</title>
+    <style>
+        a {
+            color:blue;
+            text-decoration:underline;
+        }
+        .saw {
+            color:blueviolet;
+            text-decoration: none;
+        }
+        #clicked {
+            color: brown;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom:3px solid black;
+            margin: 20px;
+            padding:10px;
+        }
+        .end {
+            border-top: 3px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1>명언</h1>
+    <h1 style="color:red">명언</h1>
     <p>
         <h2>인생 명언</h2>
             <ul>
@@ -20,19 +43,19 @@
     <br>
     <p>
         <h2> 영화 명언</h2>
-        <ol>    
+        <ol> 
             <li><strong>길을 아는 것과 그 길을 걷는 것은 분명히 다르다.</strong> 
             (<a href="https://namu.wiki/w/%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4(%EC%98%81%ED%99%94)" target="_blank" title="매트릭스 나무위키">영화 매트릭스</a>)</li>
             <li>가끔은 혼자있는 것도 좋다. <a href="index.html">(손재민)</a></li>
         </ol>
     </p>
-
-    <p>
-        <h2><a href="signUp.html">회원가입</a></h2>
+    
+    <p class="end">
+        <h2><a href="signUp.html" class="saw">회원가입</a></h2>
     </p>
 
     <p>
-        <h2><a href="quiz.html">문제</a></h2>
+        <h2><a href="quiz.html" class="saw" id="clicked">문제</a></h2>
     </p>
 </body>
 </html>
