@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    padding:10px;
+}
+
+#grid {
+    display: flex;
+    border-top: 2px black solid;
+    padding:10px;
+    border-bottom: 2px solid black;
+}
+.two {
+    border-left: 2px black solid;
+    margin-left: 700px;
+    padding-left: 10px;
+}
+
+#end {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.center {
+    text-align: center;
+}
+
+@media(max-width:800px) {
+    #grid {
+        display: block;
+    }
+    .two {
+        margin-left: 0;
+        border-top: 2px solid black;
+        margin-top: 10px;
+        border-left: none;
+        padding-left: 0;
+    }
+
+}
