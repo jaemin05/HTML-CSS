@@ -5,49 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>퀴즈</h1>
     <form action="basicGrammar.html">
-        <p>
-            <h3>문제1</h3>
-            1+1 =
-        </p>
-        <p>
-            <label>
-                0 <input type="radio" name="answer" value="0"> <br>
-            </label>
-            <label>
-                1 <input type="radio" name="answer" value="1"> <br>
-            </label>
-            <label>
-                2 <input type="radio" name="answer" value="2"> 
-            </label>
-        </p>
-        <button>제출</button>
-        <p>
-            <h3>문제2 (답 2개)</h3>
+        <div id="grid">
+            <div>
+            <p>
+                <h3>문제1</h3>
+                1+1 =
+            </p>
+            <p>
+                <label>
+                    0 <input type="radio" name="answer" value="0"> <br>
+                </label>
+                <label>
+                    1 <input type="radio" name="answer" value="1"> <br>
+                </label>
+                <label>
+                    2 <input type="radio" name="answer" value="2"> 
+                </label>
+            </p>
+                <button>제출</button>
+            </div>
+            <div class="two">
+                <p>
+                    <h3>문제2 (답 2개)</h3>
+                    2+2 =
+                </p>
+                <p>
+                    <label>
+                        사 <input type="checkbox" name="answer" value="0"> <br>
+                    </label>
+                    <label>
+                        4 <input type="checkbox" name="answer" value="1"> <br>
+                    </label>
+                    <label>
+                        5 <input type="checkbox" name="answer" value="2"> 
+                    </label>
+                </p>
+                <button>제출</button>
+            </div>
+        </div>
 
-            2+2 =
-        </p>
-        <p>
-            <label>
-                사 <input type="checkbox" name="answer" value="0"> <br>
-            </label>
-            <label>
-                4 <input type="checkbox" name="answer" value="1"> <br>
-            </label>
-            <label>
-                5 <input type="checkbox" name="answer" value="2"> 
-            </label>
-        </p>
-        <button>제출</button>
+    <div class="center">    
         <p><button>돌아가기</button></p>
     </form>
-    <form action="report.html">
-        <p>
-            <button>신고하기</button>
-        </p>
-    </form>
+        <div id="end">
+            <form action="report.html">
+                <p>
+                    <button>신고하기</button>
+                </p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
