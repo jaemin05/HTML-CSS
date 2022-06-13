@@ -27,9 +27,10 @@ cal.plus(1,2);
 const minus3And4 = cal.minus(3,4);
 alert(minus3And4);
 
-const i = 1;
+let secretNumber;
+let i = 1;
 while(i) {
-    const secretNumber = prompt("숫자를 입력하세요.");
+    secretNumber = prompt("숫자를 입력하세요.");
     if(!isNaN(secretNumber)) {
         i = 0;
     }
