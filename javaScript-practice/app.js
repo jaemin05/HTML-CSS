@@ -31,7 +31,7 @@ let secretNumber;
 let i = 1;
 while(i) {
     secretNumber = prompt("숫자를 입력하세요.");
-    if(!isNaN(secretNumber)) {
+    if(!isNaN(secretNumber) && !secretNumber == "") {
         i = 0;
     }
 }
