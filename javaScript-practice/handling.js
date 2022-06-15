@@ -1,18 +1,10 @@
 const title = document.querySelector(".title h1");
+const h1 = document.querySelector(".test h1");
 
 title.innerText = "HERE";
 
-function handleTitle() {
-
-    const currentColor = title.style.color;
-    let newColor;
-
-    if(currentColor == "black") {
-        newColor = "red";
-    } else {
-        currentColor = "black";
-    }
-    currentColor = newColor;
+function handleTitleClick() {    
+    h1.classList.toggle("active");
 }
 
 function handleMouseEnter() {
@@ -41,7 +33,8 @@ function handleOnline() {
 
 console.log(title);
 
-title.onclick = handleTitle;
+h1.addEventListener("click", handleTitleClick);
+
 title.addEventListener("mouseenter", handleMouseEnter);
 title.addEventListener("mouseleave", handleMouseLeave);
 
