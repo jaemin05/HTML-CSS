@@ -1,3 +1,16 @@
 body {
-    background-color: lavender;
+    background-color:bisque;
+}
+
+h1 {
+    color: black;
+    transition:color .5s ease-in-out;
+}
+
+.active {
+    color:violet;
+}
+
+.test {
+    color:aqua;
 }
